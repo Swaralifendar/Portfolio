@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarali Fendar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Swarali</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-image">
+                    <div class="profile-placeholder">SF</div>
+                </div>
+                <h1 class="hero-title">Swarali <span class="gradient-text">Fendar</span></h1>
+                <p class="hero-subtitle">Full Stack Developer | Cloud & AI Enthusiast</p>
+                <p class="hero-description">
+                    I'm a 3rd year IT engineering student passionate about blending intuitive design with powerful tech. Whether it's building secure web apps or AI-driven tools, I love turning ideas into impactful digital experiences.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/Swaralifendar" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/swarali-fendar-3207b1291" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:swaralifendar@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('about')">Learn More</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('about')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">Photo</div>
+                </div>
+                <div class="about-text">
+                    <h3>Engineering Student with a Vision</h3>
+                    <p>
+                        I'm currently pursuing my B.Tech in Information Technology and have hands-on experience with full-stack development, cloud technologies, and machine learning. From building interactive UIs to designing robust APIs, I enjoy both the frontend finesse and backend logic.
+                    </p>
+                    <p>
+                        I'm a quick learner who thrives in fast-paced environments. Beyond coding, I enjoy prototyping new ideas, exploring AR/VR tech, and participating in hackathons that challenge my creative thinking.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-code"></i></div>
+                            <h4>Clean Code</h4>
+                            <p>Writing maintainable, scalable solutions</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-palette"></i></div>
+                            <h4>Design Focus</h4>
+                            <p>Creating beautiful user experiences</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                            <h4>Fast Delivery</h4>
+                            <p>Efficient development process</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<section id="skills" class="skills">
+    <div class="section-header">
+      <h2 class="section-title">Skills</h2>
+      <div class="section-divider"></div>
+    </div>
+  <div class="card-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>C</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Skilled in system-level programming, algorithm design, and optimization.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>C++</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Experienced in object-oriented programming, game development, and performance-critical
+                            applications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>React</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Proficient in building dynamic, interactive user interfaces for web applications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>HTML & CSS</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Skilled in crafting responsive and accessible web designs, ensuring a seamless user
+                            experience across devices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Experienced in front-end development, enabling dynamic and engaging web functionalities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <br><br>
+</section>
+
+
+    <!-- Projects Section -->
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Projects</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="project-list">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>StopWatch Web Application</p>
+                <button onclick="openModal('modal1')">View Details</button>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Tic-Tac-Toe</p>
+                <button onclick="openModal('modal2')">View Details</button>
+            </div>
+        </div>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <h3>StopWatch Web Application</h3>
+                <p>This project is a web-based stopwatch application built using JavaScript, HTML, and CSS. The
+                    stopwatch can start, stop, and reset, with an intuitive user interface that displays elapsed time in
+                    a digital clock format. The project demonstrates my ability to create interactive web applications
+                    using fundamental web technologies.</p>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <h3>Tic-Tac-Toe Game</h3>
+                <p>The Tic-Tac-Toe game is a classic two-player game implemented with React.js. The game features a
+                    responsive design, allowing players to play on any device. It also includes a simple AI opponent for
+                    single-player mode. This project showcases my skills in React development and responsive web design.
+                </p>
+            </div>
+        </div>
+  </div>
+</section>
+
+
+    <!-- Experience Section -->
+<section id="experience" class="experience">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Experience</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="experience-content">
+      <div class="experience-item">
+        <h3>AICTE Eduskills AWS Cloud Virtual Internship</h3>
+        <p>Explored AWS services like EC2, S3, IAM, Lambda and completed a capstone project on cloud-hosted web deployment.</p>
+      </div>
+      <div class="experience-item">
+        <h3>Juspay Prep - Super Dream Program</h3>
+        <p>Qualified coding assessments for top companies. Strengthened problem-solving and DSA skills.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Whether you have a project in mind, want to collaborate, or just want to say hello, I'd love to hear from you. Feel free to reach out through any of these channels.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>swaralifendar@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Nagpur, Maharashtra, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <span class="gradient-text">Swarali Fendar</span>
+                    </div>
+                    <p>Full Stack Developer | Cloud & AI Enthusiast</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Swaralifendar" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/swarali-fendar-3207b1291" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:swaralifendar@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Made with <i class="fas fa-heart"></i> by Swarali Fendar</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) element.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
