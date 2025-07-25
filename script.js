@@ -59,29 +59,29 @@ window.addEventListener('scroll', () => {
 });
 
 // Skill bars animation
-const observerOptions = {
-    threshold: 0.5,
-    rootMargin: '0px 0px -100px 0px'
-};
+// const observerOptions = {
+//     threshold: 0.5,
+//     rootMargin: '0px 0px -100px 0px'
+// };
 
-const skillsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const skillBars = entry.target.querySelectorAll('.skill-progress');
-            skillBars.forEach(bar => {
-                const width = bar.getAttribute('data-width');
-                setTimeout(() => {
-                    bar.style.width = width + '%';
-                }, 200);
-            });
-        }
-    });
-}, observerOptions);
+// const skillsObserver = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             const skillBars = entry.target.querySelectorAll('.skill-progress');
+//             skillBars.forEach(bar => {
+//                 const width = bar.getAttribute('data-width');
+//                 setTimeout(() => {
+//                     bar.style.width = width + '%';
+//                 }, 200);
+//             });
+//         }
+//     });
+// }, observerOptions);
 
-const skillsSection = document.getElementById('skills');
-if (skillsSection) {
-    skillsObserver.observe(skillsSection);
-}
+// const skillsSection = document.getElementById('skills');
+// if (skillsSection) {
+//     skillsObserver.observe(skillsSection);
+// }
 
 // Animate elements on scroll
 const animateOnScrollObserver = new IntersectionObserver((entries) => {
@@ -202,34 +202,34 @@ document.querySelectorAll('.timeline-item').forEach(item => {
 });
 
 // Add hover effect for project cards
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        card.style.transform = 'translateY(-10px) scale(1.02)';
-    });
+// document.querySelectorAll('.project-card').forEach(card => {
+//     card.addEventListener('mouseenter', () => {
+//         card.style.transform = 'translateY(-10px) scale(1.02)';
+//     });
     
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = 'translateY(0) scale(1)';
-    });
-});
+//     card.addEventListener('mouseleave', () => {
+//         card.style.transform = 'translateY(0) scale(1)';
+//     });
+// });
 
 // Add click effect for buttons
-document.querySelectorAll('.btn').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-        let ripple = document.createElement('span');
-        ripple.classList.add('ripple');
-        this.appendChild(ripple);
+// document.querySelectorAll('.btn').forEach(btn => {
+//     btn.addEventListener('click', function(e) {
+//         let ripple = document.createElement('span');
+//         ripple.classList.add('ripple');
+//         this.appendChild(ripple);
         
-        let x = e.clientX - e.target.offsetLeft;
-        let y = e.clientY - e.target.offsetTop;
+//         let x = e.clientX - e.target.offsetLeft;
+//         let y = e.clientY - e.target.offsetTop;
         
-        ripple.style.left = `${x}px`;
-        ripple.style.top = `${y}px`;
+//         ripple.style.left = `${x}px`;
+//         ripple.style.top = `${y}px`;
         
-        setTimeout(() => {
-            ripple.remove();
-        }, 600);
-    });
-});
+//         setTimeout(() => {
+//             ripple.remove();
+//         }, 600);
+//     });
+// });
 
 // Add CSS for ripple effect
 const style = document.createElement('style');

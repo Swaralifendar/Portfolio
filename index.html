@@ -40,7 +40,7 @@
                 <h1 class="hero-title">Swarali <span class="gradient-text">Fendar</span></h1>
                 <p class="hero-subtitle">Full Stack Developer | Cloud & AI Enthusiast</p>
                 <p class="hero-description">
-                    I'm a 3rd year IT engineering student passionate about blending intuitive design with powerful tech. Whether it's building secure web apps or AI-driven tools, I love turning ideas into impactful digital experiences.
+                    I'm a 4rd year IT engineering student passionate about blending intuitive design with powerful tech. Whether it's building secure web apps or AI-driven tools, I love turning ideas into impactful digital experiences.
                 </p>
                 <div class="social-links">
                     <a href="https://github.com/Swaralifendar" class="social-link"><i class="fab fa-github"></i></a>
@@ -172,6 +172,7 @@
       <h2 class="section-title">Projects</h2>
       <div class="section-divider"></div>
     </div>
+    </div>
     <div class="project-list">
             <div class="project">
                 <h3>Project 1</h3>
@@ -183,7 +184,17 @@
                 <p>Tic-Tac-Toe</p>
                 <button onclick="openModal('modal2')">View Details</button>
             </div>
-        </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Autmated Map Creation from Satellite Images</p>
+                <button onclick="openModal('modal3')">View Details</button>
+            </div>
+            <div class="project">
+                <h3>Project 4</h3>
+                <p>Alumni Association Platform</p>
+                <button onclick="openModal('modal4')">View Details</button>
+            </div>
+    </div>
 
         <div id="modal1" class="modal">
             <div class="modal-content">
@@ -206,7 +217,26 @@
                 </p>
             </div>
         </div>
-  </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <h3>Automated Map Creation from Satellite Images</h3>
+                <p>This project involves using Python and OpenCV to process satellite images and generate detailed maps. It includes image
+                segmentation, feature extraction, and map rendering techniques. The project demonstrates my skills in computer vision
+                and image processing.</p>
+            </div>
+        </div>
+
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                <h3>Alumni Association Platform</h3>
+                <p>Platform to connect Alumni and Students in the campus . It includes features like Alumni Profile, Student Profile, Event
+                Management, and Message System. This project showcases my skills in backend development using Node.js and MongoDB.</p>
+            </div>
+        </div>
+
 </section>
 
 
@@ -217,14 +247,23 @@
       <h2 class="section-title">Experience</h2>
       <div class="section-divider"></div>
     </div>
-    <div class="experience-content">
-      <div class="experience-item">
-        <h3>AICTE Eduskills AWS Cloud Virtual Internship</h3>
-        <p>Explored AWS services like EC2, S3, IAM, Lambda and completed a capstone project on cloud-hosted web deployment.</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="job-title">Cloud Intern - AICTE Eduskills AWS</h3>
+          <span class="job-duration">Aug 2024 - Oct 2024</span>
+          <p>Explored AWS services like EC2, S3, IAM, Lambda and completed a capstone project on cloud-hosted web deployment.</p>
+        </div>
       </div>
-      <div class="experience-item">
-        <h3>Juspay Prep - Super Dream Program</h3>
-        <p>Qualified coding assessments for top companies. Strengthened problem-solving and DSA skills.</p>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="job-title">Backend Developer - Secure App Project</h3>
+          <span class="job-duration">Feb 2025 - Mar 2025</span>
+          <p>Built a secure Node.js + Express backend using MongoDB, JWT authentication, and HTTPS via NGINX for encryption.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -323,5 +362,6 @@
             if (element) element.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
